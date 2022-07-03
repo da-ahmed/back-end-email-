@@ -5,11 +5,11 @@ const Mailjet = require('node-mailjet');
 const router = express.Router();
 
 
-var cors = require('cors')
-const corsOption = {
-    origin: ['http://localhost:3000'],
-};
-app.use(cors(corsOption));
+//var cors = require('cors')
+//const corsOption = {
+   // origin: ['http://localhost:3000'],
+//};
+//app.use(cors(corsOption));
 
 
 app.get('/emailsend', (req,res) => {
