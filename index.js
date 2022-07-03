@@ -64,7 +64,9 @@ app.get('/emailsend', (req,res) => {
 
 })
 
-app.listen(8080, () => {
-    console.log("Serveur à l'écoute")
-})
+const server = app.listen(process.env.PORT || 8080, () => {
+    const port = server.address().port;
+    console.log(`Express is working on port ${port}`);
+});
+
 
